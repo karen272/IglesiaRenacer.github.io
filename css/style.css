@@ -1,0 +1,413 @@
+/* Estilos base */
+:root {
+    --main-color: #ebad39;
+    --black: #000000;
+    --bg: #1a1818;
+    --border: 0.5rem solid rgba(255,255,255,.3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+
+html {
+    display: flex;
+    font-size: 70%;
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+/* btn escuchar en vivo */
+.btn {
+     margin-top: 1rem;
+     display: inline-block;
+     padding: 3rem 3rem;
+     font-size: 1.7rem;
+     color: #fff;
+     background: #c56f07;
+     cursor: pointer;
+}
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 4rem;
+}
+
+.header .logo-text {
+    color: var(--main-color);
+    text-decoration: none;
+    height: 2rem;
+    font-size: 0.9rem;
+    -webkit-text-stroke: 0.5px black;
+}
+.header .logo-text span {
+    color: #fff;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/fondo1.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.home .content h3 span {
+    color: var(--main-color);
+    -webkit-text-stroke: 0.5px black;
+}
+
+.sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px 0;
+}
+
+.escuchar-en-vivo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.escuchar-en-vivo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.programas {
+    padding: 30px 0 30px 0;
+}
+
+.programas h2 {
+    padding: 30px 0 20px 0;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    -webkit-text-stroke: 0.5px black;
+}
+
+.contenedor-programas {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.imagen-about-us {
+    width: 100%;
+}
+
+.programas .contenido-textos-programas {
+    width: 95%;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    height: 20%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.contenido-textos h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.contenido-textos p {
+    padding: 0px 50px 30px 90px;
+    font-weight: 550;
+    text-align: left;
+    font-size: 2rem;
+}
+/*progrma section*/
+.contenido-textos-programas h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.contenido-textos-programas h4 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contenido-textos-programas p {
+    
+    padding: 30px 0 20px 0;
+    font-weight: 200;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.footer {
+    background: black;
+    text-align: center;
+}
+
+.footer .share {
+    padding: 7rem 0;
+}
+
+.footer .share a {
+    height: 6rem;
+    width: 6rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    color: #fff;
+    border: var(--border);
+    margin: 3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+.footer h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #fff;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 1350px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 10%;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+
+    section {
+        padding: 2rem;
+    }
+
+    .escuchar {
+        padding: 20px 0;
+    }
+
+    .escuchar-en-vivo img {
+        max-width: 100%;
+    }
+
+    .contenedor-programas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .programas .contenido-textos {
+        width: 90%;
+    }
+
+    .imagen-about-us {
+        width: 90%;
+    }
+}
+
+@media (max-width: 790px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .logo-text {
+        font-size: 1rem;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    .escuchar {
+        padding: 30px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .escuchar-en-vivo img {
+        max-width: 80%;
+    }
+
+    .imagen-about-us {
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .programas .contenido-textos {
+        width: 95%;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+
+    .escuchar {
+        padding: 20px 0;
+    }
+
+    .escuchar-en-vivo img {
+        max-width: 100%;
+    }
+
+    .footer h2 {
+        font-size: 18px;
+    }
+}
